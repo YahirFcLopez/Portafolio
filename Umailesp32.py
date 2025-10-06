@@ -3,14 +3,14 @@ import time
 from machine import Pin, TouchPad
 import umail
 
-SSID = ""
-PASSWORD = ""
+SSID = "NOMBRE DE LA RED PARA UTILIZARLA"
+PASSWORD = " CONTRASEÑA DE LA MISMA"
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 465
-SENDER_EMAIL = ""
-SENDER_PASSWORD = ""
-RECEIVER_EMAIL = ""
+SENDER_EMAIL = "AQUI PONER CORREO DEL REMITENTE"
+SENDER_PASSWORD = "AQUI PONER CONTRASEÑA DE APLICACION"
+RECEIVER_EMAIL = "AQUI PONER CORREO DEL DESTINATARIO"
 
 touch = TouchPad(Pin(13))
 
@@ -48,5 +48,6 @@ while True:
         time.sleep(10)
 
     time.sleep(0.5)
+
 
 
